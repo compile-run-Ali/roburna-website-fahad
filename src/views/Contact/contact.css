@@ -1,0 +1,63 @@
+.blockchain .contact-banner{
+    background-image: url(../../Assets/images/contact-bg.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding: 3% 5% 1%;
+}
+.blockchain .contact-banner .yellowleaf{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5%;
+}
+.contact-page h6 {
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contact-page h4 {
+    max-width: 814px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+}
+.contact-page{
+    padding: 10% 0 5%;
+    background: linear-gradient(0deg, rgb(0 0 0 / 10%) 1.45%, rgb(255 255 255 / 15%) 53.02%, rgb(0 0 0 / 14%) 91.44%, rgb(255 255 255) 98.52%), #FFFFFF;
+}
+.contact-banner form div{
+    width: calc(50% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.contact-banner form input::placeholder , .contact-banner form textarea::placeholder{color: #BABABA;}
+.contact-banner form input , .contact-banner form textarea , .contact-banner form select{
+    width: 100%;
+    background: #EFEFEF;
+    border-radius: 67px;
+    padding: 27px 34px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    position: relative;
+    border: none;
+}
+.contact-banner form select{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background-image: url(../../Assets/images/chev-down.png) ;
+    background-repeat: no-repeat;
+    background-position: 95% 55%;
+    background-size: 44px;
+}
+.contact-banner form textarea{
+    border-radius: 25px;
+    height: 80%;
+}
+.contact-banner form .--btn-1{min-width: 440px;}

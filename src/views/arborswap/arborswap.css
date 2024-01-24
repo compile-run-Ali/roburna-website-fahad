@@ -1,0 +1,392 @@
+header {
+    z-index: 1;
+}
+
+.color-red {
+    color: red;
+}
+.custom-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 18px 12px 0;
+}
+.custom-input input{
+    display: inline;
+    width: fit-content !important;
+    margin-right: 10px;
+}
+.multi-wrap > div > div:first-of-type{
+    background: #efefef;
+    border: none;
+    border-radius: 67px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 14px 34px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #BABABA;
+    max-height: 80px;
+    overflow-y: hidden;
+}
+.multi-wrap svg{display: none;}
+.arbor-form-box form .select-wrap.multi-wrap::after{
+    top: 50%;
+    transform: translateY(-50%);
+    /* right: 20px; */
+}
+#react-select-2-placeholder{
+    position: relative;
+    color: transparent;
+}
+.multi-wrap-5 #react-select-2-placeholder::after{
+    content: 'You are interested in DeFi because (select all the answers that apply)';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #BABABA;
+
+}
+.arbor-main-banner {
+    width: 100%;
+    background-image: url(../../Assets/images/arborswap-bg2.png);
+    height: 1489px;
+    position: relative;
+}
+
+.arbor-banner-feature {
+    position: absolute;
+    background-color: #C89C34;
+    box-shadow: 0px 0px 20px 20px rgb(200 156 52 / 20%);
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.arbor-banner-feature.lottery {
+    left: 10%;
+    top: 45%
+}
+
+.arbor-banner-feature.exchange {
+    left: 13%;
+    top: 35%
+}
+
+.arbor-banner-feature.marketplace {
+    right: 11%;
+    top: 35%
+}
+
+.arbor-banner-feature.launchpad {
+    right: 8%;
+    top: 45%
+}
+
+.arborswap {
+    margin-bottom: 100px;
+}
+
+.arborswap-column {
+    background-image: url(../../Assets/images/arborswap-form-background2.png);
+    filter: brightness(1);
+    background-position: center -15px;
+    /*-moz-box-shadow: 0px 10px 12px 0px #00000029, 0px 9px 12px 0px #00000021;;*/
+    /*-webkit-box-shadow: 0px 10px 12px 0px #00000029, 0px 9px 12px 0px #00000021;;*/
+    /*box-shadow: 0px 10px 12px 0px #00000029, 0px 9px 12px 0px #00000021;;*/
+    -moz-box-shadow: 0px 17px 20px 10px #a3a3a329;
+    -webkit-box-shadow: 0px 17px 20px 10px #a3a3a329;
+    box-shadow: 0px 17px 20px 10px #a3a3a329;
+    border-radius: 20px;
+}
+
+.flower {
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.arborswap-main .contact-banner .yellowleaf {
+    left: 50%;
+    position: absolute;
+    top: -5%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.validationError {
+    border: 2px solid #eb0808 !important;
+}
+
+.gender-radio input {
+    padding: 0px !important;
+}
+
+.arborswap-main .arborswap-banner {
+
+    position: relative;
+    margin-top: -326px;
+    padding-bottom: 15px;
+    padding-top: 3%;
+
+}
+
+.arborswap-main .banner-text-box {
+    gap: 25px;
+    min-width: 100%;
+}
+
+.arbor-form-box form input,
+.arbor-form-box form select,
+.arbor-form-box form textarea {
+    background: #efefef;
+    border: none;
+    border-radius: 67px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 27px 34px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #BABABA;
+}
+
+.arbor-form-box form select {
+    -webkit-appearance: none;
+    padding-right: 40px;
+    white-space: break-spaces;
+}
+
+.arbor-form-box form .select-wrap {
+    position: relative;
+}
+
+.arbor-form-box form .select-wrap::after {
+    content: url(../../Assets/images/form-arrow.png);
+    position: absolute;
+    top: 28px;
+    right: 14px;
+    pointer-events: none;
+}
+
+.arbor-form-box {
+    background: white;
+    padding: 50px 80px;
+    border-radius: 20px;
+    /*box-shadow: 9px 8px 49px 1px #000000*/
+}
+
+.custom-textarea {
+    height: 300px;
+    border-radius: 24px !important;
+}
+
+.form-check-input[type=checkbox] {
+    background-repeat: no-repeat !important;
+    width: 22px !important;
+    padding: 0px !important;
+    border-radius: 75px !important;
+}
+
+.form-check-input:checked[type=checkbox] {
+    background-repeat: no-repeat !important;
+    width: 22px !important;
+    padding: 0px !important;
+    border-radius: 75px !important;
+    background-color: #4A8B2C;
+    border-color: #4A8B2C;
+
+
+}
+
+.form-check-input:checked {
+    background-color: #4A8B2C !important;
+    border-color: #4A8B2C !important;
+}
+
+.radio-input {
+    font-size: 19px !important;
+}
+
+.arbor-banner-content {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+}
+
+.arbor-banner-text-content {
+    background-image: url(../../Assets/images/blur-bg.png);
+    text-align: center;
+    color: white;
+    padding: 58px;
+    background-size: cover;
+    border-radius: 22px;
+}
+
+.arbor-swap-logo {
+    margin-bottom: 57px;
+}
+
+.arbor-banner-text-content .--btn-1 {
+    display: block;
+    margin: auto;
+    max-width: 370px;
+    padding: 20px
+}
+
+.arbor-form-box .--btn-1 {
+    display: block;
+    margin: auto;
+}
+
+@media (min-width: 1940px) {
+    .arborswap-column {
+        background-image: url(../../Assets/images/arborswap-form-background.png);
+        filter: brightness(1);
+        background-position: center -15px;
+        -moz-box-shadow: 0px 10px 12px 0px #00000029, 0px 9px 12px 0px #00000021;
+        ;
+        -webkit-box-shadow: 0px 10px 12px 0px #00000029, 0px 9px 12px 0px #00000021;
+        ;
+        box-shadow: 0px 10px 12px 0px #00000029, 0px 9px 12px 0px #00000021;
+        ;
+    }
+
+    .arborswap-main .arborswap-banner {
+        position: relative;
+        margin-top: -375px;
+        padding-bottom: 75px;
+        padding-top: 3%;
+    }
+
+    .flower {
+        position: absolute;
+        top: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+    }
+
+    .arborswap-main .banner-text-box {
+        gap: 25px;
+        min-width: 100%;
+        margin-top: 45px !important;
+    }
+
+    .arbor-main-banner {
+        width: 100%;
+        background-image: url(../../Assets/images/arborswap-bg2.png);
+        height: 1489px;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .arbor-form-box form input,
+    .arbor-form-box form select,
+    .arbor-form-box form textarea {
+        padding: 15px 25px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .multi-wrap > div > div:first-of-type{
+        padding: 15px 25px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .arbor-form-box form select {
+        padding-right: 40px;
+    }
+
+    .arbor-form-box form .select-wrap::after {
+        top: 14px;
+        right: 14px;
+    }
+
+    .arborswap-page {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .arbor-swap-logo {
+        width: 200px;
+    }
+
+    .arborswap-column {
+        border-radius: 20px;
+        box-shadow: none;
+    }
+
+    .arbor-banner-content {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .arborswap-main .arborswap-banner {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .arbor-form-box {
+        padding: 45px 20px;
+    }
+
+    .arborswap-banner-box h2 span {
+        display: block
+    }
+    .form-check-input:checked[type=checkbox]{
+        height: 22px;
+    }
+    .form-check-input[type=checkbox]{
+        height: 22px;
+    }
+    .custom-label-style{
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .arbor-banner-content {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .arborswap-page {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .custom-button-style {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .arborswap-main .arborswap-banner {
+        margin-top: -255px;
+    }
+
+    .arbor-banner-text-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

@@ -1,0 +1,29 @@
+.projects-sec{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 1.45%, rgba(0, 0, 0, 0.12) 17.63%, rgba(255, 255, 255, 0.15) 33.3%, rgba(0, 0, 0, 0.12) 50.49%, rgba(255, 255, 255, 0.15) 65.15%, rgba(0, 0, 0, 0.12) 80.83%, rgba(0, 0, 0, 0.10) 98.52%), #FFFFFF;
+}
+.blockchain .labs-banner{background-image: url(../../Assets/images/labs-bannerbg.png) , url(../../Assets/images/blockchain-bannerbg.png);}
+.labs-info-card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5% 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    position: relative;
+}
+.labs-info-card *{position: relative;z-index: 1;}
+.labs-bg-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    max-height: 300px;
+    max-width: 70%;
+    object-fit: contain;
+    z-index: 0;
+    opacity: 0.05;
+}
+.projects-sec{padding: 0 5%;}

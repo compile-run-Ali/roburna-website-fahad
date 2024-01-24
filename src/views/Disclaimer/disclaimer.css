@@ -1,0 +1,38 @@
+.blockchain .disclaimer-banner{
+    background-image: url(../../Assets/images/disclaim-bannerbg.png) , url(../../Assets/images/blockchain-bannerbg.png);
+    background-size: 50% 100%, 1800px 100% ;
+    position: relative;
+    min-height: 500px;
+    padding-bottom: 40px;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+.bg-fade{
+    position: absolute;
+    height: 100%;
+    left: 68%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.disclaimer-page{
+    padding: 10% 0 5%;
+    background: linear-gradient(1deg, rgb(0 0 0 / 10%) 1.45%, rgba(0, 0, 0, 0.15) 53.02%, rgba(0, 0, 0, 0.0266667) 91.44%, rgba(255, 255, 255, 1) 98.52%), #FFFFFF;;
+}
+.disclaimer-banner .banner-text-box{min-width: 590px;margin-left: 165px;margin-top: auto;margin-bottom: auto;}
+.disclaimer-banner .banner-text-box .yellowleaf{ top: -25%; }
+.h4{font-size: 24px;font-weight: 700;line-height: 40.8px;}
+hr{
+    background: rgba(220, 220, 220, 0.2)
+}
+.disclaim-main-sec{
+    background-color: #FFFFFF;
+    padding: 5%;
+    margin: 2.5% 5%;
+    border-radius: 10px;
+    gap: 20px;
+    font-size: 18px;
+}
+.blockchain .whitepaper-banner{
+    background-image: url(../../Assets/images/whitepaper-bannerbg.png) , url(../../Assets/images/blockchain-bannerbg.png);
+    overflow-x: visible;
+}

@@ -1,0 +1,84 @@
+.blockchain .alt-banner{
+    background-image: url(../../Assets/images/plant-hand.png) , url(../../Assets/images/blockchain-bannerbg.png);
+    background-position:  right, left;
+    background-size: 50% 100%, 1800px 100% ;
+    background-repeat: no-repeat;
+    padding: 3% 0 1%;
+}
+.blockchain-tophalf{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 7.52%, rgba(0, 0, 0, 0.12) 25.72%, rgba(0, 0, 0, 0) 90.43%), #FFFFFF ;
+    padding: 10% 0 5%;
+}
+.gitbook-link{
+    margin-top: 3rem;
+}
+.yellowleaf{position: absolute;left: 468px;transform: translateX(-50%);top: -30px;}
+.blockchain h2{font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;}
+.blockchain h5{font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;}
+.blockchain .banner-text-box{
+    position: relative;
+    margin-left: 75px;
+    gap: 25px;
+    min-width: 784px;
+}
+.blockchain .alt-banner .treebg{height: 90%;}
+.blockchain .info-card{
+    padding: 30% 17% 5%;
+}
+.infoplant{position: absolute;bottom: 0;left: 10%;}
+.blockchain-bothalf{
+    background: linear-gradient(1.80deg, rgba(0, 0, 0, 0.10) 7.52%, rgba(0, 0, 0, 0.12) 25.72%, rgba(0, 0, 0, 0) 90.43%), #FFFFFF;
+}
+.phases-sec{padding: 0 5%;}
+.phase-card-wrap{
+    background: linear-gradient(270deg, #4A8B2C 0%, #C89211 97.5%);
+    padding: 0;
+    border-radius: 16px 0 0 16px;
+}
+.phasenumber{position: absolute;left: -1px;top: 50%;transform: translateY(-50%);filter: grayscale(1) brightness(1.5)}
+.grleaf{position: absolute;left: 55%;top: -36px;box-shadow: 0 0px 20px 17px #ffffffd4;background-color: #ffffffd4;}
+.phase-card{
+    position: relative;
+    height: 360px;
+    border-radius: 13px 0 0 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, rgb(237 237 237) 0%, #FFFFFF 13.14%, #FFFFFF 100%);
+    box-shadow: 0px 19px 33px rgba(111, 109, 113, 0.13);
+    padding: 7.5% 10% 7.5% 30%;
+    text-align: center;
+}
+.phase-card-wrap h5 , .phase-card-wrap .grleaf{display: none; pointer-events: none;}
+.phase-card-wrap.active h5, .phase-card-wrap.active .grleaf{display: block;;}
+.phase-card-wrap.completed h5{display: block;}
+.phase-card-wrap.active {padding: 8px;border-radius: 16px;}
+.phase-card-wrap.active .phase-card {border-radius: 13px;}
+.phase-card-wrap.active .phasenumber {filter: none;}
+.founder-wrap{padding: 10% 0;}
+.founder-row{
+    background: linear-gradient(123.37deg, #EDECEC 20.62%, #FFFFFF 56.48%, #FFFFFF 74.97%);
+    box-shadow: 0px 19px 33px rgba(111, 109, 113, 0.13);
+    border-radius: 10px;
+}
+.founder-image{height: 100%;object-fit: cover;}
+.px-15{padding-left: 15% !important;padding-right: 15% !important;}
+
+@media (max-width: 767px) {
+    .yellowleaf{
+        display: none !important;
+    }
+    .founder-image{
+        height: auto;
+        width: 100%;
+    }
+    .gitbook-link{
+        margin-top: 8rem !important;
+    }
+}
