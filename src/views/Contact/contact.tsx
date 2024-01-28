@@ -121,7 +121,7 @@ export function Contact() {
                                 placeholder='Message*'
                                 onChange={(e) => onChange(e.target.value, "message", "string")} />
                             {errors.message && (<div className='text-danger'> {errors.message} </div>)}
-                            <button type='submit' className='--btn-1 labs-btn2' onClick={onSubmit}>Send message</button>
+                            <button className='--btn-1 labs-btn2' onClick={onSubmit}>Send message</button>
                         </div>
                     </form>
                 </div>

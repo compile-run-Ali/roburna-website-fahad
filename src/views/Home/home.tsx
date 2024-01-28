@@ -10,7 +10,8 @@ import { BlogSlider } from '../../Components/BlogSlider'
 import Carousel from "react-multi-carousel";
 import React from 'react';
 import { NavLink } from 'react-router-dom'
-
+import phase1 from "../../Assets/images/1.png";
+import phase2 from "../../Assets/images/2.png";
 import "react-multi-carousel/lib/styles.css";
 import './home.css'
 import { useHomeBanner } from 'utils/hooks'
@@ -25,7 +26,10 @@ const responsive = {
 
 export function Home() {
   const { banner, features } = useHomeBanner()
-
+  const ecosystemPartners = [
+    { id: 1, logo: phase1, link: 'https://example.com/partner1' },
+    { id: 2, logo: phase2, link: 'https://example.com/partner2' },
+  ];
   console.log('feature', features)
 
   return (
@@ -78,7 +82,7 @@ export function Home() {
             <div className='info-card d-flex flex-column justify-content-center align-items-center text-center'>
               <img className='info-leaf' src={yellowLeaf} alt={yellowLeaf} width='46px' />
               <img className='info-image' src={labs} alt={labs} width={100}/>
-              <p >RBA LABS is the development arm of the Roburna ecosystem, on a mission to open up
+              <p >ROBURNA LABS is the development arm of the Roburna ecosystem, on a mission to open up
                 the Web3 horizon to a wide range of corporate and industrial sectors, including energy
                 management, healthcare, agriculture and natural resources, retail, e-commerce, gaming,
                 industrial production, and many others.</p>
@@ -96,7 +100,40 @@ export function Home() {
           </div>
         </div>
       </section>
+      <section className='home-info-sec p-md-5 pb-md-0 '>
+        <img src={treebg} alt={treebg} className='treebg' />
+        <div className='row p-lg-5 pb-lg-0'>
+          <div className='col-md-6 col-12 p-0 margin-bottom-custom mobile-border-radius'>
+            <div className='info-card d-flex flex-column justify-content-center align-items-center text-center'>
+              <img className='info-leaf' src={yellowLeaf} alt={yellowLeaf} width='46px' />
+              <img className='info-image' src={labs} alt={labs} width={100}/>
+              <p >Start your transactions on Roburna Blockchain with our native currency, RBA. It's not just a token – it's your key to interact within the Roburna blockchain. Holders earn effortlessly through our frictionless system, encouraging widespread adoption. RBA isn't just about holding, it's about embracing a currency that shapes the future of Roburna. Connect with RBA and explore the world of Roburna Blockchain today!</p>
+              <NavLink to='/labs' className='--btn-1'>Get RBA</NavLink>
+            </div></div>
+          <div className='col-md-6 col-12 p-0 margin-bottom-custom mobile-border-radius'>
+            <div className='info-card card2 d-flex flex-column justify-content-center align-items-center text-center'>
+              <img className='info-leaf' src={yellowLeaf} alt={yellowLeaf} width='46px' />
+              <img className='info-image' src={blockchain} alt={blockchain} width={100} />
+              <p >Get into the Roburna blockchain with the Roburna Portal – your simple gateway to the Roburna Blockchain. Deposit your assets, and get the same value in RBA on the Roburna Mainnet. Easily transfer tokens from other networks, converting them into Roburna's own token ($RBA). The portal is your easy bridge to join the Roburna chain.  Bring your assets and build the future with us!</p>
+              <NavLink to='/blockchain' className='--btn-1 '>Use Portal</NavLink>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='partners-section p-md-5 pb-md-0'>
+        <div className='container'>
+          <h2>Ecosystem Partners</h2>
+          <div className='partners-logos'>
+            {ecosystemPartners.map((partner) => (
+              <a key={partner.id} href={partner.link} target='_blank' rel='noopener noreferrer'>
+                <img src={partner.logo} alt={`Partner ${partner.id}`} style={{ width: '100%' }} />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
       <BlogSlider />
+
     </div>
   );
 }

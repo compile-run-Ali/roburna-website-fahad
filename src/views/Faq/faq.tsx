@@ -1,42 +1,52 @@
-import { FooterBlog } from '../../Components/FooterBlog'
-import Accordion from 'react-bootstrap/Accordion';
-import '../Blockchain/blockchain.css'
+import { FooterBlog } from "../../Components/FooterBlog";
+import Accordion from "react-bootstrap/Accordion";
+import "../Blockchain/blockchain.css";
 import { Helmet } from "react-helmet";
-import { useFAQs } from 'utils/hooks';
-
-
-
-
+import { useFAQs } from "utils/hooks";
 
 export function Faq() {
-    const FAQs = useFAQs()
-    return (
-
-        <section className='faq-sec'>
-            <h1 className='special-heading faq1'>
-                <span>ROBURNA</span> FAQ
-            </h1>
-            <Helmet>
-                <title>Roburna - Faq</title>
-                <meta name='description' content='Roburna uses frictionless earning and elastic validation to introduce the Proof-of-Earn (PoE) and Delegated-Proof-of-Earn (DPoE) consensus mechanisms.' />
-                <meta property="og:image" content="https://roburna.com/static/media/banner.cfea34887d06d9f79b5d.png" />
-            </Helmet>
-            <div className='faq-wrap'>
-                <Accordion alwaysOpen>
-                    {!!FAQs.length && FAQs.map((FAQ) => {
-                        return (
-                            <Accordion.Item eventKey={FAQ.id.toString()} className='expand' key={FAQ.id}>
-                                <Accordion.Header>{FAQ.question}</Accordion.Header>
-                                <Accordion.Body>
-                                    <div className='expand-desc'>
-                                        <div dangerouslySetInnerHTML={{ __html: FAQ.answer }} />
-                                    </div>
-                                </Accordion.Body>
-                            </Accordion.Item>
-                        )
-                    })}
-                </Accordion>
-                {/* <Accordion alwaysOpen>
+  const FAQs = useFAQs();
+  return (
+    <section className="faq-sec">
+      <h1 className="special-heading faq1">
+        <span>ROBURNA</span> FAQ
+      </h1>
+      <Helmet>
+        <title>Roburna - Faq</title>
+        <meta
+          name="description"
+          content="Roburna uses frictionless earning and elastic validation to introduce the Proof-of-Earn (PoE) and Delegated-Proof-of-Earn (DPoE) consensus mechanisms."
+        />
+        <meta
+          property="og:image"
+          content="https://roburna.com/static/media/banner.cfea34887d06d9f79b5d.png"
+        />
+      </Helmet>
+      <div className="faq-wrap">
+        <Accordion alwaysOpen>
+          {!!FAQs.length &&
+            FAQs.map((FAQ) => {
+              return (
+                <Accordion.Item
+                  eventKey={FAQ.id.toString()}
+                  className="expand"
+                  key={FAQ.id}
+                >
+                  <Accordion.Header>
+                    <span className="custom-accordion-header">
+                      {FAQ.question}
+                    </span>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <div className="expand-desc">
+                      <div dangerouslySetInnerHTML={{ __html: FAQ.answer }} />
+                    </div>
+                  </Accordion.Body>
+                </Accordion.Item>
+              );
+            })}
+        </Accordion>
+        {/* <Accordion alwaysOpen>
                     <Accordion.Item eventKey="0" className='expand'>
                         <Accordion.Header>What is Roburna Blockchain and how was it created?</Accordion.Header>
                         <Accordion.Body>
@@ -303,11 +313,10 @@ export function Faq() {
 
 
                 </Accordion> */}
-            </div>
-            <FooterBlog />
-            <br /><br />
-
-        </section>
-    );
+      </div>
+      <FooterBlog />
+      <br />
+      <br />
+    </section>
+  );
 }
-

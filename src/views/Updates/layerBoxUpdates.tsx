@@ -28,7 +28,7 @@ export const formatDateTime = (date: string) => {
 export const LayerOne: React.FC<Iupdates> = ({handleModal, updates, key }) => {
     console.log('ti',updates.id)
     return (
-        <div className='col-lg-6 col-12 mb-5'>
+        <div className='col-lg-6 col-12 mb-5 ' style={{height:'10%'}}>
             <div className='home-blog-card'>
                 <img src={updates.image} />
                 <div className='blog-card-bottom'>

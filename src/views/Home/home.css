@@ -10,6 +10,32 @@
     padding-left: 7.5%;
 }
 
+/* Add this to your existing CSS or create a new file for homepage styles */
+
+.partners-section {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .partners-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .partners-logos a {
+    margin: 20px;
+  }
+  
+  .partners-logos img {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    cursor: pointer;
+  }
+  
+
 .banner h1 {
     font-weight: 700;
     font-size: 42px;
@@ -227,10 +253,6 @@
 }
 
 .blog-slider-btn {
-    /* absolute */
-    position: absolute;
-    bottom: 5px;
-    left: 130px;
     font-weight: 700;
     font-size: 20px;
     line-height: 40px;
@@ -249,14 +271,13 @@
 .blog-card-bottom h1{font-size: 24px;}
 .blog-card-bottom {
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding: 5% 10%;
+    padding: 0% 10%;
     text-align: center;
     /* give a constant size to all */
-    height: 700px;
+    height: 600px;
 
 /* filter: drop-shadow(0px 19px 33px rgba(111, 109, 113, 0.13)); */
 }

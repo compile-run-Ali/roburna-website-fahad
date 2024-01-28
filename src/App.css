@@ -96,6 +96,14 @@ header .navbar-nav {
     color: #fff;
     transform: scale(1.1);
 }
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .newsletter-form input {
     background-color: #EFEFEF;
@@ -248,7 +256,6 @@ footer p {
 }
 
 .treebg {
-    z-index: -1;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -501,13 +508,6 @@ footer p {
 .blog-heading{
     display: none;
 }
-
-
-.z-index-updated{
-    z-index: 20 !important;
-}
-
-
 @media screen and (max-width: 1710px) {
     .feature-slider-item {
         height: 422px;
@@ -711,6 +711,7 @@ footer p {
     .blog-page-sec .home-blog-card {
         margin: 0;
     }
+    
 
     .blog-page-sec .home-blog-card .blog-card-bottom h5 {
         font-size: 22px;
@@ -1065,6 +1066,7 @@ footer p {
 
     .blog-card-bottom {
         font-weight: 300;
+        font-size: 14px;
         line-height: 18px;
     }
 

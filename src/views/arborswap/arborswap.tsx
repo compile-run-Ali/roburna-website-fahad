@@ -101,7 +101,7 @@ export function Arborswap() {
                     <div className="arbor-banner-text-content">
                         <h2 className="mb-5">ArborSwap: one-stop-shop for your basic – and not so basic – DeFi needs.</h2>
                         <p className="mb-5">ArborSwap is one multi-chain platform integrating many DeFi protocols: DEX, IDO, marketplace
-                            (including for the RBA LABS games) and more. It will feature tools for businesses and
+                            (including for the ROBURNA LABS games) and more. It will feature tools for businesses and
                             individuals, and be open to everything, from trading a new skin for a game to launching an
                             entire blockchain project.
                         </p>

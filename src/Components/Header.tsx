@@ -50,7 +50,7 @@ function Header() {
               to="/labs" onClick={hideMenu}
               className={({ isActive }) => `nav-item nav-link ${isActive ? 'item' : ''} mb-1 mb-lg-0`}
             >
-              RBA LABS
+              ROBURNA LABS
             </NavLink>
             <NavLink
               to="/blog" onClick={hideMenu}
@@ -76,6 +76,10 @@ function Header() {
             >
               CONTACT
             </NavLink>
+     
+            <a 
+              onClick={hideMenu}
+            href='https://testnet.rbascan.com/' target='_blank' className='nav-item nav-link mb-1 mb-lg-0'>RBASCAN</a>
            
         
           </Nav>

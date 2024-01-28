@@ -18,7 +18,7 @@
     padding: 10% 0 5%;
     background: linear-gradient(1deg, rgb(0 0 0 / 10%) 1.45%, rgba(0, 0, 0, 0.15) 53.02%, rgba(0, 0, 0, 0.0266667) 91.44%, rgba(255, 255, 255, 1) 98.52%), #FFFFFF;;
 }
-.disclaimer-banner .banner-text-box{min-width: 590px;margin-left: 165px;margin-top: auto;margin-bottom: auto;}
+.disclaimer-banner .banner-text-box{width: 200px;margin-left: 165px;margin-top: auto;margin-bottom: auto; }
 .disclaimer-banner .banner-text-box .yellowleaf{ top: -25%; }
 .h4{font-size: 24px;font-weight: 700;line-height: 40.8px;}
 hr{
@@ -35,4 +35,6 @@ hr{
 .blockchain .whitepaper-banner{
     background-image: url(../../Assets/images/whitepaper-bannerbg.png) , url(../../Assets/images/blockchain-bannerbg.png);
     overflow-x: visible;
+    width: screen;
+    
 }
