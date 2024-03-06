@@ -47,7 +47,7 @@ export interface ContactInfo {
   message: string;
 }
 
-const BASE_URL = "https://api.roburna.com/api/v1";
+const BASE_URL = "https://apitest.roburna.com/api/v1";
 export const updatesData = async (): Promise<Responseupdates> => {
   const response = await fetch(`${BASE_URL}/updates`);
   if (!response.ok) throw new Error(await response.text());
